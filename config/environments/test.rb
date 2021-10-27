@@ -7,7 +7,8 @@ require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.active_record.maintain_test_schema = true
+  config.active_record.migration_error = false
   config.cache_classes = true
 
   # Do not eager load code on boot. This avoids loading your whole application
@@ -53,7 +54,6 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
-  config.active_record.migration_error = true
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
 end
