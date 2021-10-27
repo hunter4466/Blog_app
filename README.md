@@ -4,7 +4,10 @@ In this project I'm developing a blog app that allows people to create users,
 
 ## Screenshots
 
-No screenshots yet.
+![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_root_users.png)
+![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_user_page.png)
+![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_user_all_posts.png)
+![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_single_post.png)
 
 ## Built With
 

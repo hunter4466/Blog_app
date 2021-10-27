@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-    def show 
-        puts params
-    end
+  def show
+    puts params
+  end
 end
