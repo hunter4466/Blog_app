@@ -1,24 +1,56 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project I'm developing a blog app that allows people to create users, 
 
-Things you may want to cover:
+## Screenshots
 
-* Ruby version
+No screenshots yet.
 
-* System dependencies
+## Built With
 
-* Configuration
+- ![Ruby](https://img.shields.io/badge/Ruby-20232A?style=for-the-badge&logo=ruby&logoColor=61DAFB)
 
-* Database creation
+## Getting Started
 
-* Database initialization
+### Installation
 
-* How to run the test suite
+1. Clone the repo
 
-* Services (job queues, cache servers, search engines, etc.)
+   git clone https://github.com/hunter4466/Blog_app.git
+  
 
-* Deployment instructions
+### Usage
 
-* ...
+    ```sh
+    Execute "$ bundle install" command
+    ```
+
+### Test
+
+For testing the classes run:
+
+   ```sh
+   rspec spec/*.rb --format doc
+   ```
+
+## Authors
+
+👤 **Mario Chois**
+
+- GitHub: [@githubhandle](https://github.com/hunter4466/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mario-chois-5a13b6b6/)
+- Angelist: [@angelist](https://angel.co/u/mario-chois)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/hunter4466/Blog_app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://github.com/hunter4466/Blog_app/blob/development/LICENSE) licensed.
