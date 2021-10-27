@@ -33,7 +33,7 @@ In this project I'm developing a blog app that allows people to create users,
 For testing the classes run:
 
    ```sh
-   bundle exec rspec spec 
+   bundle exec rspec spec
    ```
 
 ## Authors
