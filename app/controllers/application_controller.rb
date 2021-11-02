@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  def show
-    puts params
+  def self.current_user
+    User.first
   end
 end
