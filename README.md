@@ -1,17 +1,18 @@
 # Blog App
 
-In this project I'm developing a blog app that allows people to create users, 
+In this project I'm developing a blog app that allows people to create users, posts, comments, and likes upon user actions.
 
 ## Screenshots
 
-![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_root_users.png)
-![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_user_page.png)
-![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_user_all_posts.png)
-![image](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_single_post.png)
+![image](./app/assets/images/Screenshots/sc1.png)
+![image](./app/assets/images/Screenshots/sc2.png)
+![image](./app/assets/images/Screenshots/sc3.png)
+![image](./app/assets/images/Screenshots/sc4.png)
 
 ## Built With
 
 - ![Ruby](https://img.shields.io/badge/Ruby-20232A?style=for-the-badge&logo=ruby&logoColor=61DAFB)
+- ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 
 ## Getting Started
 
