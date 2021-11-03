@@ -1,38 +1,30 @@
-<section class='user-posts'>
-  <div class='user'>
-    <div class='profile-photo'>photo</div>
-    <div class='username'>
-      <h1 class='name'><%= @user.name %></h2>
-      <h2 class='posts-counter'>Number of posts: <%= @user.posts_counter %></h4>
+<div class='post_index_main_wrapper'>
+  <div class='post_index_user_detail_wraper'>
+    <div class='post_index_user_img'>photo</div>
+    <div class='post_index_user_info_area'>
+      <h1 class='post_index_user_name_tag'><%= @user.name %></h2>
+      <h2 class='post_index_user_posts_count'>Number of posts: <%= @user.posts_counter %></h4>
     </div>
   </div>
-  <ul class='posts-list'>
+  <ul class='post_index_posts_container'>
     <% @posts.each do |post| %>
-      <li class='post'>
-        <div class='post-details'>
-          <div class='post-title'>
-            <h4><%= link_to post.title, user_post_path(user_id: @user, id: post.id) %></h4>
-          </div>
-          <div class='post-description'>
-            <p><%= post.text %></p>
-          </div>
-          <div class='post-counters'>
-            <h5>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h5>
-          </div>
+      <li class='post_index_post_li'>
+        <div class='post_index_header_area'>
+            <h1 class='post_index_post_title'><%= link_to post.title, user_post_path(user_id: @user, id: post.id), class: 'post_index_title_link' %></h1>
+            <p class='post_index_post_text'><%= post.text %></p>
+            <h2 class='post_index_comments_and_likes_counter'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h2>
         </div>
-        <div class='post-comments'>
-          <ul class='comments-list'>
-            <% @comments.each do |comment| %>
-              <% if comment.author_id == @user.id && comment.post_id == post.id %>
-                <li class='user-comment'>
-                  <p>Username: <%= comment.text %></p>
-                </li>
-              <% end %>
+        <ul class='post_index_comments_list'>
+          <% @comments.each do |comment| %>
+            <% if comment.post_id == post.id %>
+              <li class='post_index_comments_text'>
+                <%= @userlist.find(comment.author_id).name %>: <%= comment.text %>
+              </li>
             <% end %>
-          </ul>
-        </div>
+          <% end %>
+        </ul>
       </li>
     <% end %>
   </ul>
-  <div class="pagination"><button class="pagination-btn">Pagination</button></div>
-</section>
+  <button class='post_index_pag_btn'>Pagination</button>
+</div>

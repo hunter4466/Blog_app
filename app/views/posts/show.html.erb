@@ -1,24 +1,20 @@
-<section class="user-post">
-  <div class="post">
-    <div class="title-counters">
+<div class="">
+  <div class="">
+    <div class="">
       <h4><%= @post.title %></h4>
       <h5>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></h5>
     </div>
-    <div class="post-description">
+    <div class="">
       <p><%= @post.text %></p>
     </div>
   </div>
-  <div class="comments">
-    <div class='post-comments'>
-      <ul class='comments-list'>
+    <ul class=''>
         <% @comments.each do |comment| %>
-          <% if comment.author_id == @user.id && comment.post_id == @post.id %>
-            <li class='user-comment'>
-              <p>Username: <%= comment.text %></p>
+            <% if comment.post_id == @post.id %>
+            <li class=''>
+                <%= @userlist.find(comment.author_id).name %>: <%= comment.text %>
             </li>
-          <% end %>
+            <% end %>
         <% end %>
-      </ul>
-    </div>
-  </div>
-</section>
+    </ul>
+</div>

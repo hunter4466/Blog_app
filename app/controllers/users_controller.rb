@@ -5,6 +5,7 @@ class UsersController < ApplicationController
       Post.update_post_counter(user)
     end
   end
+
   def show
     @user = User.find(params[:id])
     @posts = User.most_recent_posts(@user)
