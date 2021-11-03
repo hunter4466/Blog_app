@@ -104,5 +104,9 @@
     margin-left: 220px;
 }
 .user_show_see_all_post_link {
-    @include:
+    @include simpleBtn(100px, 20px);
+    margin-left: 135px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
