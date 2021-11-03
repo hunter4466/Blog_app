@@ -1,25 +1,25 @@
-<div class=''>
-  <div class=''>
-    <div class=''>photo</div>
-    <div class=''>
-      <h2 class=''><%= @user.name %></h2>
-      <h4 class=''>Number of posts: <%= @user.posts_counter %></h4>
+<div class='user_show_main_wrapper'>
+  <div class='user_show_user_info_wrapper'>
+    <div class='user_show_user_photo'>photo</div>
+    <div class='user_show_user_detail_wrapper'>
+      <h2 class='user_show_user_name'><%= @user.name %></h2>
+      <h4 class='user_show_user_post_counter'>Number of posts: <%= @user.posts_counter %></h4>
     </div>
   </div>
-  <div class="">
-    <h1>Bio</h1>
-    <p class="">
+  <div class='user_show_user_bio_wrapper'>
+    <h1 class='user_show_user_bio_tag'>Bio</h1>
+    <p class='user_show_user_bio_detail'>
       <%= @user.bio %>
     </p>
   </div>
-  <ul class=''>
+  <ul class='user_show_user_posts_wrapper'>
     <% @posts.each do |post| %>
-      <li class=''>
-        <h4><%= link_to post.title, user_post_path(user_id: @user, id: post.id) %></h4>
-        <p><%= post.text %></p>
-        <h5>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h5>
+      <li class='user_show_user_post'>
+        <h1 class='user_show_user_post_title'><%= link_to post.title, user_post_path(user_id: @user, id: post.id) %></h1>
+        <p class='user_show_user_post_text'><%= post.text %></p>
+        <h2 class='user_show_user_post_comments'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h2>
       </li>
     <% end %>
   </ul>
-  <%= link_to "See all posts", user_posts_path(user_id: @user), class: "" %>
+  <%= link_to "See all posts", user_posts_path(user_id: @user), class: 'user_show_see_all_post_link' %>
 </section>

@@ -44,8 +44,9 @@
 .post_index_post_li {
     list-style: none;
     padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
-    @include simpleFrame(391px, fit-content)
+    @include simpleFrame(371px, fit-content)
 }
 .post_index_header_area {
     @include flexbox(column);
@@ -53,15 +54,13 @@
 .post_index_post_title {
     @include customFont('lato1', 20px);
 }
-.post_index_title_link {
-}
 .post_index_post_text {
-    @include customFont('lato3', 15px);
+    @include customFont('lato3', 13px);
 }
 .post_index_comments_and_likes_counter {
     position:relative;
     @include customFont('lato1', 10px);
-    margin-left: 280px;
+    margin-left: 260px;
 
 }
 .post_index_comments_list {
@@ -76,5 +75,41 @@
 .post_index_pag_btn {
     width: 100px;
     margin-left: 150px;
+    @include customFont('lato3', 15px);
+}
+
+// ------------------ post-show -------------------
+
+.post_show_main_wrapper {
+    @include flexbox(column);
+    @include centerHor(420px);
+}
+.post_show_post_wrapper {
+    @include flexbox(column);
+    @include simpleFrame(381px, fit-content);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.post_show_post_content_wrapper {
+    @include flexbox(row);
+}
+.post_show_post_title {
+    @include customFont('lato1', 20px);
+}
+.post_show_post_comment_counter {
+    position: absolute;
+    right: 35px;
+    @include customFont('lato3', 10px);
+}
+.post_show_post_text {
+    @include customFont('lato3', 13px);
+}
+.post_show_post_comments_wrapper {
+    @include simpleFrame(381px, fit-content);
+    padding: 10px;
+}
+
+.post_show_post_comment {
+    list-style: none;
     @include customFont('lato3', 15px);
 }
