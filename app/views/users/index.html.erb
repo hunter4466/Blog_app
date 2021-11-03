@@ -1,1 +1,13 @@
-<h1>Displays a list of users</h1>
+  <ul class='users_index_main_wrapper'>
+    <% @users.each do |user| %>
+      <li class='users_index_user_li'>
+        <div class='users_index_user_photo'>photo</div>
+        <div class='users_index_user_info'>
+          <%= link_to user do %>
+            <h1 class='users_index_user_name'><%= user.name %></h1>
+            <h2 class='users_index_user_posts'>Number of posts: <%= user.posts_counter %></h2>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>

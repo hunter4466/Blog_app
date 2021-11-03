@@ -1,1 +1,30 @@
-<h1>Shows user name and list of posts for a given id</h1>
+<div class='post_index_main_wrapper'>
+  <div class='post_index_user_detail_wraper'>
+    <div class='post_index_user_img'>photo</div>
+    <div class='post_index_user_info_area'>
+      <h1 class='post_index_user_name_tag'><%= @user.name %></h2>
+      <h2 class='post_index_user_posts_count'>Number of posts: <%= @user.posts_counter %></h4>
+    </div>
+  </div>
+  <ul class='post_index_posts_container'>
+    <% @posts.each do |post| %>
+      <li class='post_index_post_li'>
+        <div class='post_index_header_area'>
+            <h1 class='post_index_post_title'><%= link_to post.title, user_post_path(user_id: @user, id: post.id), class: 'post_index_title_link' %></h1>
+            <p class='post_index_post_text'><%= post.text %></p>
+            <h2 class='post_index_comments_and_likes_counter'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h2>
+        </div>
+        <ul class='post_index_comments_list'>
+          <% @comments.each do |comment| %>
+            <% if comment.post_id == post.id %>
+              <li class='post_index_comments_text'>
+                <%= @userlist.find(comment.author_id).name %>: <%= comment.text %>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+  <button class='post_index_pag_btn'>Pagination</button>
+</div>

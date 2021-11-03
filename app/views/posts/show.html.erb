@@ -1,1 +1,18 @@
-<h1>Displays post with respectives comments</h1>
+<div class='post_show_main_wrapper'>
+  <div class='post_show_post_wrapper'>
+    <div class='post_show_post_content_wrapper'>
+      <h1 class='post_show_post_title'><%= @post.title %> by: <%= @user.name %></h1>
+      <h2 class='post_show_post_comment_counter'>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></h2>
+    </div>
+    <p class='post_show_post_text'><%= @post.text %></p>
+  </div>
+    <ul class='post_show_post_comments_wrapper'>
+        <% @comments.each do |comment| %>
+            <% if comment.post_id == @post.id %>
+            <li class='post_show_post_comment'>
+                <%= @userlist.find(comment.author_id).name %>: <%= comment.text %>
+            </li>
+            <% end %>
+        <% end %>
+    </ul>
+</div>

@@ -1,3 +1,115 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import './modules/frames.scss';
+@import './modules/buttons.scss';
+@import './fonts.scss';
+// ------------------ post-index -------------------
+
+.post_index_main_wrapper {
+    @include flexbox(column);
+    @include centerHor(420px);
+}
+
+// header
+
+.post_index_user_detail_wraper {
+    @include flexbox(row);
+    margin-top: 20px;
+}
+.post_index_user_img {
+    @include simpleFrame(55px, 47px);
+    @include customFont('lato1', 15px);
+    margin-right: 20px;
+    padding-top: 23px;
+    padding-left: 15px;
+}
+.post_index_user_info_area {
+    @include flexbox(row);
+    @include simpleFrame(300px, 70px);
+    padding-left: 20px;
+}
+.post_index_user_name_tag {
+    @include customFont('lato1', 30px);
+}
+.post_index_user_posts_count {
+    @include customFont('lato1', 15px);
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+// comments
+
+.post_index_posts_container {
+    @include flexbox(column);
+    padding: 0px;
+}
+.post_index_post_li {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    @include simpleFrame(371px, fit-content)
+}
+.post_index_header_area {
+    @include flexbox(column);
+}
+.post_index_post_title {
+    @include customFont('lato1', 20px);
+}
+.post_index_post_text {
+    @include customFont('lato3', 13px);
+}
+.post_index_comments_and_likes_counter {
+    position:relative;
+    @include customFont('lato1', 10px);
+    margin-left: 260px;
+
+}
+.post_index_comments_list {
+    @include flexbox(column);
+    @include customFont('lato3', 15px);
+    list-style: none;
+    @include simpleFrame(391px, fit-content);
+    padding: 10px;
+    margin-left: -21px;
+    margin-bottom: -1px;
+}
+.post_index_pag_btn {
+    width: 100px;
+    margin-left: 150px;
+    @include customFont('lato3', 15px);
+}
+
+// ------------------ post-show -------------------
+
+.post_show_main_wrapper {
+    @include flexbox(column);
+    @include centerHor(420px);
+}
+.post_show_post_wrapper {
+    @include flexbox(column);
+    @include simpleFrame(381px, fit-content);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.post_show_post_content_wrapper {
+    @include flexbox(row);
+}
+.post_show_post_title {
+    @include customFont('lato1', 20px);
+}
+.post_show_post_comment_counter {
+    position: absolute;
+    right: 35px;
+    @include customFont('lato3', 10px);
+}
+.post_show_post_text {
+    @include customFont('lato3', 13px);
+}
+.post_show_post_comments_wrapper {
+    @include simpleFrame(381px, fit-content);
+    padding: 10px;
+}
+
+.post_show_post_comment {
+    list-style: none;
+    @include customFont('lato3', 15px);
+}
