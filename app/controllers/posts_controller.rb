@@ -5,14 +5,14 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @userlist = User.all
     @posts = Post.joins(:author).where(author: { id: @user.id }).order(created_at: :desc)
-    @comments = Comment.order(created_at: :desc)
+    @comments = Comment.includes(:author).order(created_at: :desc)
   end
 
   def show
     @user = User.find(params[:user_id])
     @userlist = User.all
     @post = Post.find(params[:id])
-    @comments = Comment.order(created_at: :desc)
+    @comments = Comment.includes(:author).order(created_at: :desc)
     @posts = Post.joins(:author).where(author: { id: @user.id }).order(created_at: :desc)
   end
 
@@ -25,10 +25,14 @@ class PostsController < ApplicationController
     @post.title = params[:post][:title]
     @post.text = params[:post][:text]
     @post.author_id = params[:user_id]
+    @post.comments_counter = 0
+    @post.likes_counter = 0
     if @post.save
+      Post.update_post_counter(User.find(params[:user_id]))
+      flash[:notice] = 'Post has been added successfully'
       redirect_to user_posts_url(@post.author_id)
     else
-      flash.now[:error] = 'To-do item update failed'
+      flash[:error] = 'Post could not be created'
       render :new
     end
   end
