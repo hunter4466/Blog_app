@@ -1,4 +1,16 @@
 <div class="add_comment_main_container">
+<% flash.each do |type, msg| %>
+    <% if type == 'notice' %>
+      <div class="flash-notice">
+        <%= msg %>
+      </div>
+    <% end %>
+    <% if type == 'error' %>
+      <div class="flash-error">
+        <%= msg %>
+      </div>
+    <% end %>
+  <% end %>
   <%= form_with model: @comment, url: user_create_post_comment_path, method: :post, class: 'add_comment_form' do |form| %>
     <h1 class='add_comment_head_title'>Add Comment </h1>
     <%= form.label :text, "Comment:", class: 'add_comment_form_label' %>
