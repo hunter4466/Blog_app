@@ -15,4 +15,8 @@
             <% end %>
         <% end %>
     </ul>
+    <div class="post_show_btns">
+      <%= link_to 'Add Comment', user_new_post_comment_path(@user), class: 'post_show_add_comment_btn' %>
+      <%= button_to 'Like', user_create_post_like_path, method: :post, class: 'post_show_add_like_btn' %>
+   </div>
 </div>

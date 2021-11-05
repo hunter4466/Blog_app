@@ -12,10 +12,11 @@
       <%= @user.bio %>
     </p>
   </div>
+    <%= link_to 'Add Post', user_new_post_path(@user), class: 'add-post-btn' %>
   <ul class='user_show_user_posts_wrapper'>
     <% @posts.each do |post| %>
       <li class='user_show_user_post'>
-        <h1 class='user_show_user_post_title'><%= link_to post.title, user_post_path(user_id: @user, id: post.id) %></h1>
+        <h1 class='user_show_user_post_title'><%= link_to post.title, user_post_path(id: post.id, user_id: @user) %></h1>
         <p class='user_show_user_post_text'><%= post.text %></p>
         <h2 class='user_show_user_post_comments'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h2>
       </li>

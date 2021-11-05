@@ -6,6 +6,7 @@
       <h2 class='post_index_user_posts_count'>Number of posts: <%= @user.posts_counter %></h4>
     </div>
   </div>
+  <%= link_to 'Add Post', user_new_post_path(@user), class: 'post_index_post_btn' %>
   <ul class='post_index_posts_container'>
     <% @posts.each do |post| %>
       <li class='post_index_post_li'>

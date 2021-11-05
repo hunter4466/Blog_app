@@ -1,0 +1,10 @@
+<section class="post_new_main_container">
+  <%= form_with model: @post, url: user_create_post_path, method: :post, class: 'post_new_form' do |form| %>
+    <h2 class="post_new_add_post_indicator">Add Post: </h2>
+      <%= form.label :title, class: 'post_new_title_label' %>
+      <%= form.text_field :title, :required => true, class: 'post_new_title_input' %>
+      <%= form.label :text, class: 'post_new_text_label' %>
+      <%= form.text_field :text, :required => true, class: 'post_new_text_input' %>
+      <%= form.submit "Add post", class: 'post_new_submit_btn' %>
+  <% end %>
+</section>

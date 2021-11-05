@@ -113,3 +113,68 @@
     list-style: none;
     @include customFont('lato3', 15px);
 }
+
+.post_show_btns {
+    @include flexbox(column);
+}
+
+.post_show_add_comment_btn {
+    @include customFont('lato3', 15px);
+    margin-left: 145px;
+    @include simpleBtn (120px, 30px);
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.post_show_add_like_btn {
+    margin-left: 145px;
+    width: 120px;
+}
+
+// ---------------- post-new ------------------------
+
+.post_new_main_container {
+    @include flexbox(column);
+    @include centerHor(420px);
+}
+
+.post_new_form {
+    @include flexbox(column);
+    @include simpleFrame(381px, fit-content);
+    padding: 30px;
+}
+
+.post_new_add_post_indicator {
+    @include customFont('lato3', 30px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post_new_title_label {
+    margin-bottom: 20px;
+    @include customFont('lato3', 20px);
+}
+
+.post_new_title_input {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.post_new_text_label {
+    margin-bottom: 20px;
+    @include customFont('lato3', 20px);
+}
+
+.post_new_text_input {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.post_new_submit_btn {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
+    margin-left: 140px;
+}
