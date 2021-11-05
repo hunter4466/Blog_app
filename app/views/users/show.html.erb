@@ -12,6 +12,7 @@
       <%= @user.bio %>
     </p>
   </div>
+    <%= link_to 'Add Post', user_new_post_path(@user), class: 'add-post-btn' %>
   <ul class='user_show_user_posts_wrapper'>
     <% @posts.each do |post| %>
       <li class='user_show_user_post'>

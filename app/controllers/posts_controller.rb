@@ -13,6 +13,7 @@ class PostsController < ApplicationController
     @userlist = User.all
     @post = Post.find(params[:id])
     @comments = Comment.order(created_at: :desc)
+    @posts = Post.joins(:author).where(author: { id: @user.id }).order(created_at: :desc)
   end
 
   def new
