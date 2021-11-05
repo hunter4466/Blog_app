@@ -1,4 +1,16 @@
 <div class='post_show_main_wrapper'>
+<% flash.each do |type, msg| %>
+    <% if type == 'notice' %>
+      <div class="flash-notice">
+        <%= msg %>
+      </div>
+    <% end %>
+    <% if type == 'error' %>
+      <div class="flash-error">
+        <%= msg %>
+      </div>
+    <% end %>
+  <% end %>
   <div class='post_show_post_wrapper'>
     <div class='post_show_post_content_wrapper'>
       <h1 class='post_show_post_title'><%= @post.title %> by: <%= @user.name %></h1>
