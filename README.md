@@ -44,7 +44,7 @@ For testing the classes run:
 - GitHub: [@githubhandle](https://github.com/hunter4466/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mario-chois-5a13b6b6/)
 - Angelist: [@angelist](https://angel.co/u/mario-chois)
-
+ 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
