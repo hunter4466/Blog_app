@@ -1,7 +1,7 @@
 class LikesController < ApplicationController
   def like
     @like = Like.new
-    @like.author_id = ApplicationController.current_user.id
+    @like.author_id = current_user.id
     @like.post_id = params[:id]
     if @like.save
       redirect_to user_post_url(id: params[:id], user_id: params[:user_id])
