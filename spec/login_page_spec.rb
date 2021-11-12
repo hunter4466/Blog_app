@@ -2,7 +2,7 @@ RSpec.describe 'Login page', js: true, type: :system do
     before(:all) do
       @first_user = User.create(name: 'Mario', photo: 'http://lorempixel.com/100/100/',
                                 bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut officia repudi.',
-                                posts_counter: 0, email: 'mario@gmail.com', password: 'jf7l2p93li', confirmed_at: Time.now)
+                                posts_counter: 0, email: 'mariochois@gmail.com', password: 'jf7l2p93li', confirmed_at: Time.now)
       @second_user = User.create(name: 'Renato', photo: 'http://lorempixel.com/100/100/',
                                  bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut officia repudi.',
                                  posts_counter: 0, email: 'renato@gmail.com', password: 'jf7l2p93li', confirmed_at: Time.now)
