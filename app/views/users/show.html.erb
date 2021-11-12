@@ -1,6 +1,8 @@
 <div class='user_show_main_wrapper'>
   <div class='user_show_user_info_wrapper'>
-    <div class='user_show_user_photo'>photo</div>
+    <div class='user_show_user_photo'>
+      <img class='profile-photo-img' src=<%= "" + @user.photo %> alt='photo' width='100' height='100'>
+    </div>
     <div class='user_show_user_detail_wrapper'>
       <h2 class='user_show_user_name'><%= @user.name %></h2>
       <h4 class='user_show_user_post_counter'>Number of posts: <%= @user.posts_counter %></h4>

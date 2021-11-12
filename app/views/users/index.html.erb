@@ -1,7 +1,9 @@
   <ul class='users_index_main_wrapper'>
     <% @users.each do |user| %>
       <li class='users_index_user_li'>
-        <div class='users_index_user_photo'>photo</div>
+        <div class='users_index_user_photo'>
+          <img class='profile-photo-img' src=<%= user.photo %> alt='photo' width='100' height='100'>
+        </div>
         <div class='users_index_user_info'>
           <%= link_to user do %>
             <h1 class='users_index_user_name'><%= user.name %></h1>
