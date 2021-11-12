@@ -21,7 +21,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
     describe 'I can see' do
       it 'the profile picture for each user' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -32,7 +32,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'the user\'s username' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -43,7 +43,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'the number of posts the user has written' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -54,7 +54,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'a post\'s title' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -65,7 +65,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'some of the post\'s body' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -77,7 +77,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'the first comment on a post' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -88,7 +88,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'how many comments a post has' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -99,7 +99,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'how many likes a post has' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -110,7 +110,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
   
       it 'a section for pagination if there are more posts then fit on the view' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')
@@ -123,7 +123,7 @@ RSpec.describe 'in user post index page', js: true, type: :system do
     describe 'when i click' do
       it 'on a post, it redirects me to that post\'s show page' do
         visit new_user_session_path
-        fill_in 'email', with: 'mariochois@}gmail.com'
+        fill_in 'email', with: 'mariochois@gmail.com'
         fill_in 'password', with: '234234'
         click_button 'Log in'
         user = User.find_by(name: 'Mario')

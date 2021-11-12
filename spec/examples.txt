@@ -1,0 +1,34 @@
+example_id                                 | status | run_time        |
+------------------------------------------ | ------ | --------------- |
+./spec/login_page_spec.rb[1:1:1]           | passed | 6.95 seconds    |
+./spec/login_page_spec.rb[1:2:1]           | passed | 0.49105 seconds |
+./spec/login_page_spec.rb[1:2:2]           | passed | 0.94006 seconds |
+./spec/login_page_spec.rb[1:2:3]           | passed | 1.33 seconds    |
+./spec/post_show_page_spec.rb[1:1:1]       | passed | 0.81517 seconds |
+./spec/post_show_page_spec.rb[1:1:2]       | passed | 0.85391 seconds |
+./spec/post_show_page_spec.rb[1:1:3]       | passed | 0.89154 seconds |
+./spec/post_show_page_spec.rb[1:1:4]       | passed | 1.1 seconds     |
+./spec/post_show_page_spec.rb[1:1:5]       | passed | 0.83386 seconds |
+./spec/post_show_page_spec.rb[1:1:6]       | passed | 0.92717 seconds |
+./spec/post_show_page_spec.rb[1:1:7]       | passed | 0.91907 seconds |
+./spec/user_index_page_spec.rb[1:1:1]      | passed | 0.82058 seconds |
+./spec/user_index_page_spec.rb[1:1:2]      | passed | 0.95729 seconds |
+./spec/user_index_page_spec.rb[1:1:3]      | passed | 0.79777 seconds |
+./spec/user_index_page_spec.rb[1:2:1]      | passed | 0.76887 seconds |
+./spec/user_post_index_page_spec.rb[1:1:1] | passed | 0.81482 seconds |
+./spec/user_post_index_page_spec.rb[1:1:2] | passed | 0.84925 seconds |
+./spec/user_post_index_page_spec.rb[1:1:3] | passed | 0.85112 seconds |
+./spec/user_post_index_page_spec.rb[1:1:4] | passed | 0.97198 seconds |
+./spec/user_post_index_page_spec.rb[1:1:5] | passed | 0.8461 seconds  |
+./spec/user_post_index_page_spec.rb[1:1:6] | passed | 0.93281 seconds |
+./spec/user_post_index_page_spec.rb[1:1:7] | passed | 0.82025 seconds |
+./spec/user_post_index_page_spec.rb[1:1:8] | passed | 0.8171 seconds  |
+./spec/user_post_index_page_spec.rb[1:1:9] | passed | 0.81204 seconds |
+./spec/user_post_index_page_spec.rb[1:2:1] | passed | 0.8798 seconds  |
+./spec/user_show_page_spec.rb[1:1:1]       | passed | 0.72646 seconds |
+./spec/user_show_page_spec.rb[1:1:2]       | passed | 0.71825 seconds |
+./spec/user_show_page_spec.rb[1:1:3]       | passed | 0.69525 seconds |
+./spec/user_show_page_spec.rb[1:1:4]       | passed | 0.80045 seconds |
+./spec/user_show_page_spec.rb[1:1:5]       | passed | 0.88492 seconds |
+./spec/user_show_page_spec.rb[1:1:6]       | passed | 0.73211 seconds |
+./spec/user_show_page_spec.rb[1:2:1]       | passed | 0.79028 seconds |
